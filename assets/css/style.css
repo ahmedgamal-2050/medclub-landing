@@ -393,6 +393,10 @@ h1, h2, h3, h4 {
     z-index: 1;
 }
 
+.statistics-section {
+    margin-bottom: 8rem;
+}
+
 .statistics-section:hover .statistics-line {
     height: 142px;
 }
