@@ -56,7 +56,14 @@ body {
     color: #ffffff;
 }
 
-button {
+button, button:focus {
+    outline: 0;
+    box-shadow: unset !important;
+    background-color: transparent;
+    border: 0;
+}
+
+input:focus {
     outline: 0;
     box-shadow: unset !important;
 }
@@ -72,6 +79,7 @@ h1, h2, h3, h4 {
 :root {
     --main: #35b5b9;
     --main-dark: #309996;
+    --main-light: #40d3d8;
     --sub-main: #465096;
     --sub-main-dark: #303977;
     --light-gray: #f2f2f2;
@@ -81,6 +89,14 @@ h1, h2, h3, h4 {
 .bg-main {
     background-color: var(--main) !important;
 }
+
+.bg-main-dark {
+    background-color: var(--main-dark) !important;
+}
+
+.bg-main-light {
+     background-color: var(--main-light) !important;
+ }
 
 .bg-sub-main {
     background-color: var(--sub-main) !important;
@@ -138,9 +154,75 @@ h1, h2, h3, h4 {
     padding-top: 6rem !important;
 }
 
+.small {
+    font-size: 0.875rem;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
 .nav-link {
     color: #aaaaaa;
     font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--main);
+}
+
+.cart-counter {
+    font-size: 0.75rem;
+    padding-inline: 0.2rem;
+    font-weight: 600;
+    line-height: 1;
+    position: relative;
+    top: -0.5rem;
+    right: 0.5rem;
+}
+
+#searchModal {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 99;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-modal-close {
+    position: absolute;
+    color: #ffffff;
+    font-size: 2rem;
+    right: 2rem;
+    top: 2rem;
+}
+
+.search-input-group * {
+    padding: 1rem 2.5rem;
+    border: 0;
+}
+
+.search-input-group .form-control::placeholder {
+    color: #ffffff;
+    opacity: 0.85;
+    /* Firefox */
+}
+
+.search-input-group .form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: red;
+    opacity: 0.85;
+}
+
+.search-input-group .form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: red;
+    opacity: 0.85;
 }
 
 #hero-bg > img {

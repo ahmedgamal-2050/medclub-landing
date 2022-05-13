@@ -70,3 +70,13 @@ function changeLang(ele) {
         ele.querySelector('span').innerHTML = 'Ar';
     }
 }
+
+function openModal(modalName) {
+    const modalDiv = document.getElementById(modalName);
+    modalDiv.classList.remove('d-none');
+}
+
+function closeModal(modalName) {
+    const modalDiv = document.getElementById(modalName);
+    modalDiv.classList.add('d-none');
+}
