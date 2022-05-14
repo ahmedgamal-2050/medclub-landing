@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
@@ -14,33 +15,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
-        rel="stylesheet" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"
+        crossorigin>
     <!-- Bootstrap -->
-    <link rel='stylesheet'
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-        crossorigin="anonymous"
-        type='text/css'
-        media='all' />
+    <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+        type='text/css' media='all' />
     <!-- Owl Carousel -->
-    <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" 
-        type='text/css'
-        media='all'
-        referrerpolicy="no-referrer" />
+        crossorigin="anonymous" type='text/css' media='all' referrerpolicy="no-referrer" />
     <!-- AOS Animate -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
-        crossorigin="anonymous" 
-        type='text/css'
-        media='all' />
-    <!-- CSS -->     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        crossorigin="anonymous" type='text/css' media='all' />
+    <!-- CSS -->
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
+
 <body dir="ltr">
     <!-- Sub Header -->
     <header class="bg-dark text-white">
@@ -71,11 +63,7 @@
                         </div>
                         <div class="col-auto">
                             <div class="dropdown">
-                                <button 
-                                    type="button"
-                                    id="shoppingCart" 
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
+                                <button type="button" id="shoppingCart" data-bs-toggle="dropdown" aria-expanded="false"
                                     class="p-0 text-white">
                                     <i class="fas fa-shopping-cart"></i>
                                     <span class="cart-counter bg-light-gray text-dark">0</span>
@@ -86,7 +74,7 @@
                                     <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
                                 </ul>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -99,7 +87,7 @@
             <div class="row align-items-center justify-content-between">
                 <!-- Logo -->
                 <a class="col-auto" href="./index.html">
-                    <img src="./assets/images/medclub-logo.svg" class="header-logo my-3" loading="lazy" height="40"/>
+                    <img src="./assets/images/medclub-logo.svg" class="header-logo my-3" loading="lazy" height="40" />
                 </a>
                 <!-- Menu -->
                 <div class="col-auto">
@@ -155,14 +143,82 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="py-6 bg-light-gray">
+        <section class="bg-light-gray py-5">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="text-center col-lg-8 col-md-10">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="./product-list.html">Products List</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Product Details
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+                
+        </section>
+
+        <!-- Product Details -->
+        <section class="py-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="nav flex-column align-items-start nav-pills" id="product-images-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active mb-3" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1"
+                                        type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">
+                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" class="img-fluid"
+                                            width="405" height="405" loading="lazy" />
+                                    </button>
+                                    <button class="nav-link mb-3" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button"
+                                        role="tab" aria-controls="v-pills-2" aria-selected="false">
+                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/11/shop-product-4-635x785.jpg"
+                                            class="img-fluid" width="405" height="405" loading="lazy" />
+                                    </button>
+                                    <button class="nav-link mb-3" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button"
+                                        role="tab" aria-controls="v-pills-3" aria-selected="false">
+                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-7-635x785.jpg"
+                                            class="img-fluid" width="405" height="405" loading="lazy" />
+                                    </button>
+                                    <button class="nav-link mb-3" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button"
+                                        role="tab" aria-controls="v-pills-4" aria-selected="false">
+                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-11-635x785.jpg"
+                                            class="img-fluid" width="405" height="405" loading="lazy" />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" class="img-fluid"
+                                            width="405" height="405" loading="lazy" />
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/11/shop-product-4-635x785.jpg" class="img-fluid"
+                                            width="405" height="405" loading="lazy" />
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-7-635x785.jpg" class="img-fluid"
+                                            width="405" height="405" loading="lazy" />
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-11-635x785.jpg" class="img-fluid"
+                                            width="405" height="405" loading="lazy" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 mb-4">
                         <h1 class="mb-4 fw-bold">
                             Designed Clothes
                         </h1>
@@ -180,167 +236,13 @@
             </div>
         </section>
 
-        <!-- Remembered Always -->
+        <!-- Related Products -->
         <section class="py-6">
             <div class="container">
-                <div class="row align-items-center mb-4" data-aos="fade-up">
-                    <div class="col-md-4 mb-3 text-center">
-                        <h1 class="mb-3 text-muted">
-                            <i class="fas fa-shopping-cart"></i>
-                        </h1>
-                        <h5 class="mb-3">
-                            Remembered Always
-                        </h5>
-                        <p class="mb-0 text-muted">
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet. 
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
-                    </div>
-                    <div class="col-md-4 mb-3 text-center">
-                        <h1 class="mb-3 text-muted">
-                            <i class="fas fa-wallet"></i>
-                        </h1>
-                        <h5 class="mb-3">
-                            Our Innovation
-                        </h5>
-                        <p class="mb-0 text-muted">
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet. 
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
-                    </div>
-                    <div class="col-md-4 mb-3 text-center">
-                        <h1 class="mb-3 text-muted">
-                            <i class="fas fa-gift"></i>
-                        </h1>
-                        <h5 class="mb-3">
-                            Leading Organizations
-                        </h5>
-                        <p class="mb-0 text-muted">
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet. 
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call To Action -->
-        <section class="d-flex align-items-center py-6 text-white" id="call-to-action">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h1 class="fw-bold mb-3">Design & Sell</h1>
-                        <p>
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet.
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
-                        <div>
-                            <button class="btn py-3 px-4 btn-main rounded-pill">Get Started</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Products -->
-        <section class="py-6">
-            <div class="container">
-                <div class="row justify-content-center align-items-center mb-4">
-                    <div class="col-lg-8 col-md-10 text-center">
-                        <h1 class="fw-bold mb-3">What We Offer</h1>
-                        <p>
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet.
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
-                    </div>
-                </div>
+                <h4 class="mb-4">Related Products</h4>
                 <div class="row justify-content-center align-items-center">
                     <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
                         <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" 
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-main">New</span>
-                            <span class="product-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" 
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-pinky">Sale</span>
-                            <span class="product-old-price">1500 LE</span>
-                            <span class="product-new-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" 
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-pinky">Sale</span>
-                            <span class="product-old-price">1500 LE</span>
-                            <span class="product-new-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-pinky">Sale</span>
-                            <span class="product-old-price">1500 LE</span>
-                            <span class="product-new-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
                             <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
                                 class="img-fluid" width="260" height="260" loading="lazy" />
                             <span class="product-tag bg-main">New</span>
@@ -351,68 +253,43 @@
                             </span>
                         </div>
                     </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonial -->
-        <section class="py-6 bg-light-gray">
-            <div class="container">
-                <div class="owl-carousel owl-theme" id="shop-testimonial-carousel">
-                    <div class="px-3">
-                        <div class="text-center">
-                            <img width="100" height="100" class="rounded-circle border testimonial-image"
-                                src="https://medclub.app/assets/img/team/yasser.jpg" alt="a" loading="lazy">
+                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
+                        <div class="product-card position-relative mb-4">
+                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                class="img-fluid" width="260" height="260" loading="lazy" />
+                            <span class="product-tag bg-pinky">Sale</span>
+                            <span class="product-old-price">1500 LE</span>
+                            <span class="product-new-price">1000 LE</span>
+                            <span class="product-info">
+                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                            </span>
                         </div>
-                        <div class="text-center">
-                            <div class="p-4 mt-5">
-                                <p class="card-text text-muted px-4">
-                                    What is impressive about this application is the privacy it offers to the medical community, as the
-                                    creators are really
-                                    keen on keeping it closed to the doctors only. Thus, the registration process is not successfully
-                                    completed.
-                                </p>
-                                <h5 class="card-title text-sub-main mt-4">Dr. Yasser El-Gohary</h5>
-                                <h6 class="card-title text-secondary">CEO / Clinic</h6>
-                            </div>
+                    </a>
+                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
+                        <div class="product-card position-relative mb-4">
+                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                class="img-fluid" width="260" height="260" loading="lazy" />
+                            <span class="product-price">1000 LE</span>
+                            <span class="product-info">
+                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                            </span>
                         </div>
-                    </div>
-                    <div class="px-3">
-                        <div class="text-center">
-                            <img width="100" height="100" class="rounded-circle border testimonial-image"
-                                src="https://medclub.app/assets/img/team/yasser.jpg" alt="a" loading="lazy">
+                    </a>
+                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
+                        <div class="product-card position-relative mb-4">
+                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                class="img-fluid" width="260" height="260" loading="lazy" />
+                            <span class="product-tag bg-pinky">Sale</span>
+                            <span class="product-old-price">1500 LE</span>
+                            <span class="product-new-price">1000 LE</span>
+                            <span class="product-info">
+                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                            </span>
                         </div>
-                        <div class="text-center">
-                            <div class="p-4 mt-5">
-                                <p class="card-text text-muted px-4">
-                                    What is impressive about this application is the privacy it offers to the medical community, as the
-                                    creators are really
-                                    keen on keeping it closed to the doctors only. Thus, the registration process is not successfully
-                                    completed.
-                                </p>
-                                <h5 class="card-title text-sub-main mt-4">Dr. Yasser El-Gohary</h5>
-                                <h6 class="card-title text-secondary">CEO / Clinic</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-3">
-                        <div class="text-center">
-                            <img width="100" height="100" class="rounded-circle border testimonial-image"
-                                src="https://medclub.app/assets/img/team/yasser.jpg" alt="a" loading="lazy">
-                        </div>
-                        <div class="text-center">
-                            <div class="p-4 mt-5">
-                                <p class="card-text text-muted px-4">
-                                    What is impressive about this application is the privacy it offers to the medical community, as the
-                                    creators are really
-                                    keen on keeping it closed to the doctors only. Thus, the registration process is not successfully
-                                    completed.
-                                </p>
-                                <h5 class="card-title text-sub-main mt-4">Dr. Yasser El-Gohary</h5>
-                                <h6 class="card-title text-secondary">CEO / Clinic</h6>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -557,7 +434,8 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-auto col-md-6 mb-3">
                     <a class="col-auto" href="./index.html">
-                        <img src="./assets/images/medclub-white-logo.svg" class="header-logo" loading="lazy" height="40" />
+                        <img src="./assets/images/medclub-white-logo.svg" class="header-logo" loading="lazy"
+                            height="40" />
                     </a>
                 </div>
                 <div class="col-lg-auto col-md-6 mb-3">
@@ -597,9 +475,8 @@
                 <div class="input-group search-input-group rounded-pill mb-3">
                     <input type="text" class="form-control rounded-pill bg-main-light text-white rounded-end-0"
                         placeholder="Enter your email address" aria-describedby="basic-addon2">
-                    <button class="input-group-text fw-bold rounded-pill rounded-start-0 bg-white text-main" 
-                        id="basic-addon2"
-                        type="button">Search</button>
+                    <button class="input-group-text fw-bold rounded-pill rounded-start-0 bg-white text-main"
+                        id="basic-addon2" type="button">Search</button>
                 </div>
             </form>
         </div>
@@ -609,17 +486,17 @@
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <!-- Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
-            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
-            crossorigin="anonymous" 
-            referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- AOS Animate -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- JS -->
     <script src="./assets/js/app.js"></script>
 </body>
+
 </html>

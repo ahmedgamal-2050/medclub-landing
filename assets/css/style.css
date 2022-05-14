@@ -114,6 +114,10 @@ h1, h2, h3, h4 {
     background-color: var(--light-gray) !important;
 }
 
+.bg-pinky {
+    background-color: var(--pinky) !important;
+}
+
 .btn-main {
     background-color: var(--main) !important;
     color: #ffffff;
@@ -668,6 +672,18 @@ footer .nav-link.active {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#product-images-tab .nav-link {
+    padding: 0;
+}
+
+#product-images-tab .nav-link.active {
+    background-color: tr;
+}
+
+#product-images-tab .nav-link:hover {
+    opacity: 0.6;
 }
 
 .testimonial-image {
