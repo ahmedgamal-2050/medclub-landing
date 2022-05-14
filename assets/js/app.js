@@ -57,6 +57,25 @@ $(document).ready(function () {
             },
         }
     });
+
+    var shopTestimonialCarousel = $('#shop-testimonial-carousel');
+    shopTestimonialCarousel.owlCarousel({
+        loop: true,
+        rewind: true,
+        autoplay: true,
+        items: 1,
+        navText : ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+        responsive: {
+            0: {
+                nav: false,
+                dots: true,
+            },
+            767: {
+                nav: true,
+                dots: false,
+            },
+        }
+    });
 });
 
 function changeLang(ele) {
