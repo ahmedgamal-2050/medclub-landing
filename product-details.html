@@ -34,114 +34,117 @@
 </head>
 
 <body dir="ltr">
-    <!-- Sub Header -->
-    <header class="bg-dark text-white">
-        <div class="container">
-            <div class="row align-items-center justify-content-between py-2">
-                <div class="col-auto">
-                    <div class="row align-items-center justify-content-between py-2">
-                        <div class="col-auto">
-                            <i class="far fa-clock"></i>
-                            <span class="ps-2 x-small">Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
-                        </div>
-                        <div class="col-auto">
-                            <i class="fas fa-phone-alt"></i>
-                            <span class="ps-2 x-small">212 386 5575</span>
-                        </div>
-                        <div class="col-auto">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span class="ps-2 x-small">1010 Avenue of the Moon, New York, NY 10018 US.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="row align-items-center justify-content-between py-2">
-                        <div class="col-auto">
-                            <button type="button" class="p-0 text-white" onclick="openModal('searchModal')">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                        <div class="col-auto">
-                            <div class="dropdown">
-                                <button type="button" id="shoppingCart" data-bs-toggle="dropdown" aria-expanded="false"
-                                    class="p-0 text-white">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span class="cart-counter bg-light-gray text-dark">0</span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="shoppingCart">
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
-                                </ul>
+    <!-- Header -->
+    <header>
+        <!-- Sub Header -->
+        <nav class="bg-dark text-white">
+            <div class="container">
+                <div class="row align-items-center justify-content-between py-2">
+                    <div class="col-auto">
+                        <div class="row align-items-center justify-content-between py-2">
+                            <div class="col-auto">
+                                <i class="far fa-clock"></i>
+                                <span class="ps-2 x-small">Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
                             </div>
+                            <div class="col-auto">
+                                <i class="fas fa-phone-alt"></i>
+                                <span class="ps-2 x-small">212 386 5575</span>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="ps-2 x-small">1010 Avenue of the Moon, New York, NY 10018 US.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row align-items-center justify-content-between py-2">
+                            <div class="col-auto">
+                                <button type="button" class="p-0 text-white" onclick="openModal('searchModal')">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="dropdown">
+                                    <button type="button" id="shoppingCart" data-bs-toggle="dropdown" aria-expanded="false"
+                                        class="p-0 text-white">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="cart-counter bg-light-gray text-dark">0</span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="shoppingCart">
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                                    </ul>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- Main Header -->
-    <header class="bg-white shadow-sm">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <!-- Logo -->
-                <a class="col-auto" href="./index.html">
-                    <img src="./assets/images/medclub-logo.svg" class="header-logo my-3" loading="lazy" height="40" />
-                </a>
-                <!-- Menu -->
-                <div class="col-auto">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./shop.html">
-                                Shop
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Contact
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Blog
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Sign up
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Download
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index-ar.html">
-                                <img src="./assets/images/globe.svg" width="20" height="20">
-                                <span class="ps-1">Ar</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-2 pe-0">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
+        </nav>
+        <!-- Main Header -->
+        <nav class="bg-white shadow-sm">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <!-- Logo -->
+                    <a class="col-auto" href="./index.html">
+                        <img src="./assets/images/medclub-logo.svg" class="header-logo my-3" loading="lazy" height="40" />
+                    </a>
+                    <!-- Menu -->
+                    <div class="col-auto">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./shop.html">
+                                    Shop
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Sign up
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Download
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index-ar.html">
+                                    <img src="./assets/images/globe.svg" width="20" height="20">
+                                    <span class="ps-1">Ar</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-2 pe-0">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-- Main Content -->
@@ -162,7 +165,6 @@
                     </ol>
                 </nav>
             </div>
-                
         </section>
 
         <!-- Product Details -->
@@ -175,7 +177,7 @@
                                 <div class="nav flex-column align-items-start nav-pills" id="product-images-tab" role="tablist" aria-orientation="vertical">
                                     <button class="nav-link active mb-3" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1"
                                         type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">
-                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" class="img-fluid"
+                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-17-635x785.jpg" class="img-fluid"
                                             width="405" height="405" loading="lazy" />
                                     </button>
                                     <button class="nav-link mb-3" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button"
@@ -198,7 +200,7 @@
                             <div class="col-lg-10">
                                 <div class="tab-content" id="v-pills-tabContent">
                                     <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
-                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" class="img-fluid"
+                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-17-635x785.jpg" class="img-fluid"
                                             width="405" height="405" loading="lazy" />
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
@@ -219,17 +221,129 @@
 
                     </div>
                     <div class="col-lg-6 mb-4">
-                        <h1 class="mb-4 fw-bold">
-                            Designed Clothes
-                        </h1>
-                        <p class="mb-4">
+                        <div class="row justify-content-between align-items-center mb-4">
+                            <h4 class="col-auto">
+                                Headphones
+                            </h4>
+                            <div class="col-auto">
+                                <button type="button" class="btn rouned-0 border text-muted small">
+                                    <i class="fas fa-share-alt"></i>
+                                    <span>Share</span>
+                                </button>
+                                <button type="button" class="btn rouned-0 border text-muted small">
+                                    <i class="far fa-heart"></i>
+                                    <span>Like</span>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-main fw-bold">
+                            1000 LE
+                        </p>
+                        <p class="text-muted mb-4">
                             Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aeneansollicitudin,
                             lorem quis bibendum aucto nisi elit
                             consequat ipsum nec sagittis sem nibh id elit.
                         </p>
-                        <div class="d-flex justify-content-center">
-                            <button class="btn py-3 px-4 btn-main rounded-pill mx-2">Get Started</button>
-                            <button class="btn py-3 px-4 btn-sub-main rounded-pill mx-2">Learn More</button>
+                        <div class="d-flex">
+                            <div class="col-auto d-flex">
+                                
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn py-3 px-4 btn-main rounded-pill mx-3">Add To Cart</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Info -->
+        <section class="py-5 border-bottom">
+            <div class="container">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-1" type="button"
+                            role="tab" aria-controls="nav-1" aria-selected="true">
+                            Description
+                        </button>
+                        <button class="nav-link" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab"
+                            aria-controls="nav-2" aria-selected="false">
+                            Additional information
+                        </button>
+                        <button class="nav-link" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-3" type="button" role="tab"
+                            aria-controls="nav-3" aria-selected="false">
+                            Reviews(0)
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+                        <div class="p-4"> 
+                            <h6 class="fw-bold mb-3">
+                                Description
+                            </h6>
+                            <p>
+                                Lorem ipsum proin gravida nibh vel velit auctor aliqunean sollicitudinlorem quis bibendum auci elit
+                                consequat ipsutis
+                                sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                                velit. Nam nec
+                                tellus a odio tincidunt auctor a ornare oed non mauris vitae erat consequat auctor eu in elit. Class aptent
+                                taciti
+                                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna
+                                eu felis
+                                dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
+                                nunc. Etiam
+                                pharetra, erat sed fermentum feugiat velit mauris egestas quam, ut aliquam massa nisl quis neque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+                        <div class="p-4"> 
+                            <h6 class="fw-bold mb-3">
+                                Additional information
+                            </h6>
+                            <p>
+                                Lorem ipsum proin gravida nibh vel velit auctor aliqunean sollicitudinlorem quis bibendum auci elit
+                                consequat
+                                ipsutis
+                                sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                                velit. Nam
+                                nec
+                                tellus a odio tincidunt auctor a ornare oed non mauris vitae erat consequat auctor eu in elit. Class aptent
+                                taciti
+                                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna
+                                eu
+                                felis
+                                dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
+                                nunc.
+                                Etiam
+                                pharetra, erat sed fermentum feugiat velit mauris egestas quam, ut aliquam massa nisl quis neque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
+                        <div class="p-4">
+                            <h6 class="fw-bold mb-3">
+                                Reviews
+                            </h6>
+                            <p>
+                                Lorem ipsum proin gravida nibh vel velit auctor aliqunean sollicitudinlorem quis bibendum auci elit
+                                consequat
+                                ipsutis
+                                sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                                velit. Nam
+                                nec
+                                tellus a odio tincidunt auctor a ornare oed non mauris vitae erat consequat auctor eu in elit. Class aptent
+                                taciti
+                                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna
+                                eu
+                                felis
+                                dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
+                                nunc.
+                                Etiam
+                                pharetra, erat sed fermentum feugiat velit mauris egestas quam, ut aliquam massa nisl quis neque.
+                            </p>
                         </div>
                     </div>
                 </div>
