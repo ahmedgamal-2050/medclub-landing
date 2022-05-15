@@ -42,124 +42,149 @@
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 <body dir="ltr">
-    <!-- Sub Header -->
-    <header class="bg-dark text-white">
-        <div class="container">
-            <div class="row align-items-center justify-content-between py-2">
-                <div class="col-auto">
-                    <div class="row align-items-center justify-content-between py-2">
-                        <div class="col-auto">
-                            <i class="far fa-clock"></i>
-                            <span class="ps-2 x-small">Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
-                        </div>
-                        <div class="col-auto">
-                            <i class="fas fa-phone-alt"></i>
-                            <span class="ps-2 x-small">212 386 5575</span>
-                        </div>
-                        <div class="col-auto">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span class="ps-2 x-small">1010 Avenue of the Moon, New York, NY 10018 US.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="row align-items-center justify-content-between py-2">
-                        <div class="col-auto">
-                            <button type="button" class="p-0 text-white" onclick="openModal('searchModal')">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                        <div class="col-auto">
-                            <div class="dropdown">
-                                <button 
-                                    type="button"
-                                    id="shoppingCart" 
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                    class="p-0 text-white">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span class="cart-counter bg-light-gray text-dark">0</span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="shoppingCart">
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
-                                </ul>
+    <!-- Header -->
+    <header>
+        <!-- Sub Header -->
+        <nav class="bg-dark text-white">
+            <div class="container">
+                <div class="row align-items-center justify-content-between py-2">
+                    <div class="col-auto">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+                                <i class="far fa-clock"></i>
+                                <span class="ps-2 x-small">Mon - Sat 8.00 - 18.00. Friday CLOSED</span>
                             </div>
-                            
+                            <div class="col-auto">
+                                <i class="fas fa-phone-alt"></i>
+                                <span class="ps-2 x-small">212 386 5575</span>
+                            </div>
+                            <!--
+                            <div class="col-auto">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="ps-2 x-small">1010 Avenue of the Moon, New York, NY 10018 US.</span>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row align-items-center justify-content-between py-1">
+                            <div class="col-auto">
+                                <a class="d-flex align-items-center" href="index-ar.html">
+                                    <img src="./assets/images/globe.svg" width="16" height="16">
+                                    <span class="fw-bold ps-2">Ar</span>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="javascript:void(0)">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="javascript:void(0)">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="javascript:void(0)">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <div class="dropdown">
+                                    <button 
+                                        type="button"
+                                        id="shoppingCart" 
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        class="p-0 text-white">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="cart-counter bg-light-gray text-dark">0</span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="shoppingCart">
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                                    aria-controls="offcanvasNavbar">
+                                    <i class="fas fa-bars text-white"></i>
+                                </button> 
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- Main Header -->
-    <header class="bg-white shadow-sm">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <!-- Logo -->
-                <a class="col-auto" href="./index.html">
-                    <img src="./assets/images/medclub-logo.svg" class="header-logo my-3" loading="lazy" height="40"/>
-                </a>
-                <!-- Menu -->
-                <div class="col-auto">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./shop.html">
-                                Shop
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Contact
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Blog
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Sign up
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Download
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index-ar.html">
-                                <img src="./assets/images/globe.svg" width="20" height="20">
-                                <span class="ps-1">Ar</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-2 pe-0">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
+        </nav>
+        <!-- Main Header -->
+        <nav class="bg-white shadow-sm py-3">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <!-- Logo -->
+                    <a class="col-auto" href="./index.html">
+                        <img src="./assets/images/medclub-logo.svg" class="header-logo my-2" loading="lazy" width="178" height="40"/>
+                    </a>
+                    <!-- search -->
+                    <div class="col-auto">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <button type="button" class="nav-link" onclick="openModal('searchModal')">
+                                    <i class="fas fa-search"></i>
+                                    <span class="ps-2 fw-500">Search</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Menu -->
+                    <div class="col-auto">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./shop.html">
+                                    Shop
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Sign up
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Download
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
     
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="py-6 bg-light-gray">
+        <section class="py-6">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="text-center col-lg-8 col-md-10">
@@ -180,45 +205,69 @@
             </div>
         </section>
 
-        <!-- Remembered Always -->
-        <section class="py-6">
+        <!-- Categories -->
+        <section class="py-6 bg-light-gray">
             <div class="container">
-                <div class="row align-items-center mb-4" data-aos="fade-up">
-                    <div class="col-md-4 mb-3 text-center">
-                        <h1 class="mb-3 text-muted">
-                            <i class="fas fa-shopping-cart"></i>
-                        </h1>
-                        <h5 class="mb-3">
-                            Remembered Always
-                        </h5>
-                        <p class="mb-0 text-muted">
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet. 
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-3 text-center">
+                        <a href="javascript:void(0)" class="category-card">
+                            <h2 class="category-icon mb-3 mx-auto">
+                                <i class="fas fa-shopping-cart"></i>
+                            </h2>
+                            <h6 class="">
+                                Remembered Always
+                            </h6>
+                        </a>
                     </div>
-                    <div class="col-md-4 mb-3 text-center">
-                        <h1 class="mb-3 text-muted">
-                            <i class="fas fa-wallet"></i>
-                        </h1>
-                        <h5 class="mb-3">
-                            Our Innovation
-                        </h5>
-                        <p class="mb-0 text-muted">
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet. 
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-3 text-center">
+                        <a href="javascript:void(0)" class="category-card">
+                            <h2 class="category-icon mb-3 mx-auto">
+                                <i class="fas fa-wallet"></i>
+                            </h2>
+                            <h6 class="">
+                                Our Innovation
+                            </h6>
+                        </a>
                     </div>
-                    <div class="col-md-4 mb-3 text-center">
-                        <h1 class="mb-3 text-muted">
-                            <i class="fas fa-gift"></i>
-                        </h1>
-                        <h5 class="mb-3">
-                            Leading Organizations
-                        </h5>
-                        <p class="mb-0 text-muted">
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet. 
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-3 text-center">
+                        <a href="javascript:void(0)" class="category-card">
+                            <h2 class="category-icon mb-3 mx-auto">
+                                <i class="fas fa-gift"></i>
+                            </h2>
+                            <h6 class="">
+                                Leading Organizations
+                            </h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-3 text-center">
+                        <a href="javascript:void(0)" class="category-card">
+                            <h2 class="category-icon mb-3 mx-auto">
+                                <i class="fas fa-shopping-cart"></i>
+                            </h2>
+                            <h6 class="">
+                                Remembered Always
+                            </h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-3 text-center">
+                        <a href="javascript:void(0)" class="category-card">
+                            <h2 class="category-icon mb-3 mx-auto">
+                                <i class="fas fa-wallet"></i>
+                            </h2>
+                            <h6 class="">
+                                Our Innovation
+                            </h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mb-3 text-center">
+                        <a href="javascript:void(0)" class="category-card">
+                            <h2 class="category-icon mb-3 mx-auto">
+                                <i class="fas fa-gift"></i>
+                            </h2>
+                            <h6 class="">
+                                Leading Organizations
+                            </h6>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -242,9 +291,64 @@
             </div>
         </section>
 
+        <!-- Sponsor -->
+        <section class="py-6 bg-light">
+            <div class="container">
+                <h5 class="text-muted mb-4">
+                    Sponsored by:
+                </h5>
+                <div class="d-flex justify-content-center owl-carousel owl-theme" id="sponsor-carousel">
+                    <div class="item">
+                        <img width="260" height="65"
+                            src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/h8-client-2.png" alt="a"
+                            loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img width="260" height="65"
+                            src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/h8-client-5.png" alt="a"
+                            loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img width="260" height="65"
+                            src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/h8-client-1.png" alt="a"
+                            loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img width="260" height="65"
+                            src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/h8-client-3.png" alt="a"
+                            loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img width="260" height="65"
+                            src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/h8-client-2.png" alt="a"
+                            loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img width="260" height="65"
+                            src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/h8-client-5.png" alt="a"
+                            loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img width="260" height="65"
+                            src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/h8-client-1.png" alt="a"
+                            loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img width="260" height="65"
+                            src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/h8-client-3.png" alt="a"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Products -->
         <section class="py-6">
             <div class="container">
+                <div class="position-relative">
+                    <a class="see-all-products h5 fw-500" href="./product-list.html">See All</a>  
+                </div>
+                
                 <div class="row justify-content-center align-items-center mb-4">
                     <div class="col-lg-8 col-md-10 text-center">
                         <h1 class="fw-bold mb-3">What We Offer</h1>
@@ -419,9 +523,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="bg-dark text-white pt-5">
         <div class="container">
-            <div class="row justify-content-center border-bottom mb-3">
+            <div class="row justify-content-center border-bottom mb-4">
                 <div class="col-lg-3 col-md-6 mb-3">
                     <h4 class="fw-bold mb-3">
                         MedClub

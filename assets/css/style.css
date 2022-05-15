@@ -11,6 +11,15 @@ body {
 
 a {
     color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--main);
+}
+
+.fw-500 {
+    font-weight: 500;
 }
 
 .rounded-end-0 {
@@ -121,20 +130,22 @@ h1, h2, h3, h4 {
 .btn-main {
     background-color: var(--main) !important;
     color: #ffffff;
+    transition: all 1s ease-out;
 }
 
 .btn-main:hover {
-    background-color: var(--main-dark) !important;
+    background-color: var(--sub-main) !important;
     color: #ffffff;
 }
 
 .btn-sub-main {
     background-color: var(--sub-main) !important;
     color: #ffffff;
+    transition: all 1s ease-out;
 }
 
 .btn-sub-main:hover {
-    background-color: var(--sub-main-dark) !important;
+    background-color: var(--main) !important;
     color: #ffffff;
 }
 
@@ -156,6 +167,10 @@ h1, h2, h3, h4 {
 
 .text-light-gray {
     color: var(--light-gray) !important;
+}
+
+.text-dark-gray {
+    color: var(--dark-gray) !important;
 }
 
 .py-6 {
@@ -516,6 +531,27 @@ footer .nav-link.active {
     top: 120px;
 }
 
+.category-card:hover {
+    color: var(--sub-main);
+}
+
+.category-icon {
+    width: 135px;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--sub-main);
+    background-color: #ffffff;
+}
+
+.category-icon:hover {
+    background-color: var(--light-gray);
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25) !important;
+    color: var(--sub-main);
+}
+
 #our-blog {
     padding-top: 133px;
     background: #ecf7ff url(../images/our-blog-bg.jpg) no-repeat;
@@ -578,6 +614,12 @@ footer .nav-link.active {
 
 .blog-card-content {
     z-index: 1;
+}
+
+.see-all-products {
+    position: absolute;
+    right: 0;
+    text-decoration: underline;
 }
 
 .article-card {
