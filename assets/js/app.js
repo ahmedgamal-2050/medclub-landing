@@ -99,3 +99,27 @@ function closeModal(modalName) {
     const modalDiv = document.getElementById(modalName);
     modalDiv.classList.add('d-none');
 }
+
+function increaseQuantity(id) {
+    let qtyInput = document.getElementById(id);
+    qtyInput.value = parseInt(qtyInput.value) + 1;
+}
+
+function decreaseQuantity(id) {
+    let qtyInput = document.getElementById(id);
+    if (parseInt(qtyInput.value) > 1) {
+        qtyInput.value = parseInt(qtyInput.value) - 1;
+    }
+}
+
+function hoverRate(rateValue) {
+    for (let i = 1; i <= rateValue; i++) {
+        document.getElementById(`star-${i}`).querySelector('svg path').style.fill = "#FFE74E";
+    }
+}
+
+function hoverOutRate(rateValue) {
+    for (let i = 1; i <= rateValue; i++) {
+        document.getElementById(`star-${i}`).querySelector('svg path').style.fill = "#D9D9D9";
+    }
+}
