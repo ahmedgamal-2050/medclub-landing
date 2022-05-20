@@ -42,376 +42,400 @@
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 <body dir="ltr">
-    <!-- Sub Header -->
-    <header class="bg-dark text-white">
-        <div class="container">
-            <div class="row align-items-center justify-content-between py-2">
-                <div class="col-auto">
-                    <div class="row align-items-center justify-content-between py-2">
-                        <div class="col-auto">
-                            <i class="far fa-clock"></i>
-                            <span class="ps-2 x-small">Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
-                        </div>
-                        <div class="col-auto">
-                            <i class="fas fa-phone-alt"></i>
-                            <span class="ps-2 x-small">212 386 5575</span>
-                        </div>
-                        <div class="col-auto">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span class="ps-2 x-small">1010 Avenue of the Moon, New York, NY 10018 US.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="row align-items-center justify-content-between py-2">
-                        <div class="col-auto">
-                            <button type="button" class="p-0 text-white" onclick="openModal('searchModal')">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                        <div class="col-auto">
-                            <div class="dropdown">
-                                <button 
-                                    type="button"
-                                    id="shoppingCart" 
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                    class="p-0 text-white">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span class="cart-counter bg-light-gray text-dark">0</span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="shoppingCart">
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
-                                </ul>
+    <!-- Header -->
+    <header>
+        <!-- Sub Header -->
+        <nav class="bg-dark text-white">
+            <div class="container">
+                <div class="row align-items-center justify-content-between py-2">
+                    <div class="col-auto">
+                        <div class="row align-items-center justify-content-between py-2">
+                            <div class="col-auto">
+                                <i class="far fa-clock"></i>
+                                <span class="ps-2 x-small">Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
                             </div>
-                            
+                            <div class="col-auto">
+                                <i class="fas fa-phone-alt"></i>
+                                <span class="ps-2 x-small">212 386 5575</span>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="ps-2 x-small">1010 Avenue of the Moon, New York, NY 10018 US.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row align-items-center justify-content-between py-2">
+                            <div class="col-auto">
+                                <button type="button" class="p-0 text-white" onclick="openModal('searchModal')">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="dropdown">
+                                    <button type="button" id="shoppingCart" data-bs-toggle="dropdown" aria-expanded="false"
+                                        class="p-0 text-white">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="cart-counter bg-light-gray text-dark">0</span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="shoppingCart">
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- Main Header -->
-    <header class="bg-white shadow-sm">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <!-- Logo -->
-                <a class="col-auto" href="./index.html">
-                    <img src="./assets/images/medclub-logo.svg" class="header-logo my-3" loading="lazy" height="40"/>
-                </a>
-                <!-- Menu -->
-                <div class="col-auto">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./shop.html">
-                                Shop
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Contact
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Blog
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Sign up
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
-                                Download
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index-ar.html">
-                                <img src="./assets/images/globe.svg" width="20" height="20">
-                                <span class="ps-1">Ar</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-2 pe-0">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
+        </nav>
+        <!-- Main Header -->
+        <nav class="bg-white shadow-sm">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <!-- Logo -->
+                    <a class="col-auto" href="./index.html">
+                        <img src="./assets/images/medclub-logo.svg" class="header-logo my-3" loading="lazy" height="40" />
+                    </a>
+                    <!-- Menu -->
+                    <div class="col-auto">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./shop.html">
+                                    Shop
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Sign up
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    Download
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index-ar.html">
+                                    <img src="./assets/images/globe.svg" width="20" height="20">
+                                    <span class="ps-1">Ar</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-2 pe-0">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
+
     <!-- Main Content -->
     <main>
-        <!-- Doctors Need -->
-        <section class="py-6 bg-light-gray">
+        <!-- Breadcrumb -->
+        <section class="bg-light-gray py-5">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="text-center col-lg-8 col-md-10">
-                        <h1 class="mb-4 fw-bold">
-                            Designed Clothes
-                        </h1>
-                        <p class="mb-4">
-                            Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aeneansollicitudin,
-                            lorem quis bibendum aucto nisi elit
-                            consequat ipsum nec sagittis sem nibh id elit.
-                        </p>
-                        <div class="d-flex justify-content-center">
-                            <button class="btn py-3 px-4 btn-main rounded-pill mx-2">Get Started</button>
-                            <button class="btn py-3 px-4 btn-sub-main rounded-pill mx-2">Learn More</button>
-                        </div>
-                    </div>
-                </div>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Products List
+                        </li>
+                    </ol>
+                </nav>
             </div>
         </section>
-        <!-- medical conferences -->
+
+        <!-- Products List -->
         <section class="py-6">
             <div class="container">
-                <div class="row align-items-center mb-4" data-aos="fade-up">
-                    <div class="col-md-4 mb-3 text-center">
-                        <h1 class="mb-3 text-muted">
-                            <i class="fas fa-shopping-cart"></i>
-                        </h1>
-                        <h5 class="mb-3">
-                            Remembered Always
-                        </h5>
-                        <p class="mb-0 text-muted">
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet. 
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
-                    </div>
-                    <div class="col-md-4 mb-3 text-center">
-                        <h1 class="mb-3 text-muted">
-                            <i class="fas fa-wallet"></i>
-                        </h1>
-                        <h5 class="mb-3">
-                            Our Innovation
-                        </h5>
-                        <p class="mb-0 text-muted">
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet. 
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
-                    </div>
-                    <div class="col-md-4 mb-3 text-center">
-                        <h1 class="mb-3 text-muted">
-                            <i class="fas fa-gift"></i>
-                        </h1>
-                        <h5 class="mb-3">
-                            Leading Organizations
-                        </h5>
-                        <p class="mb-0 text-muted">
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet. 
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Call To Action -->
-        <section class="d-flex align-items-center py-6 text-white" id="call-to-action">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h1 class="fw-bold mb-3">Design & Sell</h1>
-                        <p>
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet.
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
-                        <div>
-                            <button class="btn py-3 px-4 btn-main rounded-pill">Get Started</button>
+                <div class="row mb-4">
+                    <div class="col-lg-3">
+                        <div class="mb-4">
+                            <p class="border-bottom pb-2">
+                                Clothing
+                            </p>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small active" aria-current="page" href="javascript:void(0)">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Disabled</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <p class="border-bottom pb-2">
+                                Clothing
+                            </p>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small active" aria-current="page" href="javascript:void(0)">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Disabled</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <p class="border-bottom pb-2">
+                                Clothing
+                            </p>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small active" aria-current="page" href="javascript:void(0)">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Disabled</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-0  small" href="javascript:void(0)">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-end">
+                            <button type="button" class="btn btn-main px-5 rounded-pill">Filter</button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Articles -->
-        <section class="py-6">
-            <div class="container">
-                <div class="row justify-content-center align-items-center mb-4">
-                    <div class="col-lg-8 col-md-10 text-center">
-                        <h1 class="fw-bold mb-3">What We Offer</h1>
-                        <p>
-                            Lorem Ipsum.roin gravida nibh vel velit auctor aliquet.
-                            Aeneansollicitudin, lorem quis bibendum auctonisi elit consequat ipsum nec sagittis
-                        </p>
-                    </div>
-                </div>
-                <div class="row justify-content-center align-items-center">
-                    <a href="javascript:void(0)" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" 
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-main">New</span>
-                            <span class="product-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="javascript:void(0)" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" 
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-pinky">Sale</span>
-                            <span class="product-old-price">1500 LE</span>
-                            <span class="product-new-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="javascript:void(0)" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" 
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="javascript:void(0)" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-pinky">Sale</span>
-                            <span class="product-old-price">1500 LE</span>
-                            <span class="product-new-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="javascript:void(0)" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="javascript:void(0)" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-pinky">Sale</span>
-                            <span class="product-old-price">1500 LE</span>
-                            <span class="product-new-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="javascript:void(0)" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="javascript:void(0)" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-main">New</span>
-                            <span class="product-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonial -->
-        <section class="py-6 bg-light-gray">
-            <div class="container">
-                <div class="owl-carousel owl-theme" id="shop-testimonial-carousel">
-                    <div class="px-3">
-                        <div class="text-center">
-                            <img width="100" height="100" class="rounded-circle border testimonial-image"
-                                src="https://medclub.app/assets/img/team/yasser.jpg" alt="a" loading="lazy">
-                        </div>
-                        <div class="text-center">
-                            <div class="p-4 mt-5">
-                                <p class="card-text text-muted px-4">
-                                    What is impressive about this application is the privacy it offers to the medical community, as the
-                                    creators are really
-                                    keen on keeping it closed to the doctors only. Thus, the registration process is not successfully
-                                    completed.
-                                </p>
-                                <h5 class="card-title text-sub-main mt-4">Dr. Yasser El-Gohary</h5>
-                                <h6 class="card-title text-secondary">CEO / Clinic</h6>
+                    <div class="col-lg-9">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 p-0 row justify-content-between align-items-center mb-3">
+                                <div class="col-auto">
+                                    <p class="text-dark-gray mb-0 fw-500">
+                                        Showing 1–12 of 23 results
+                                    </p>
+                                </div>
+                                <div class="col-auto">
+                                    <select class="text-dark-gray fw-500 border-0 bg-transparent">
+                                        <option selected>Default sorting</option>
+                                        <option>Sort by popularity</option>
+                                        <option>Sort by average rating</option>
+                                        <option>Sort by latest</option>
+                                        <option>Sort by price: low to high</option>
+                                        <option>Sort by price: high to low</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="px-3">
-                        <div class="text-center">
-                            <img width="100" height="100" class="rounded-circle border testimonial-image"
-                                src="https://medclub.app/assets/img/team/yasser.jpg" alt="a" loading="lazy">
-                        </div>
-                        <div class="text-center">
-                            <div class="p-4 mt-5">
-                                <p class="card-text text-muted px-4">
-                                    What is impressive about this application is the privacy it offers to the medical community, as the
-                                    creators are really
-                                    keen on keeping it closed to the doctors only. Thus, the registration process is not successfully
-                                    completed.
-                                </p>
-                                <h5 class="card-title text-sub-main mt-4">Dr. Yasser El-Gohary</h5>
-                                <h6 class="card-title text-secondary">CEO / Clinic</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-3">
-                        <div class="text-center">
-                            <img width="100" height="100" class="rounded-circle border testimonial-image"
-                                src="https://medclub.app/assets/img/team/yasser.jpg" alt="a" loading="lazy">
-                        </div>
-                        <div class="text-center">
-                            <div class="p-4 mt-5">
-                                <p class="card-text text-muted px-4">
-                                    What is impressive about this application is the privacy it offers to the medical community, as the
-                                    creators are really
-                                    keen on keeping it closed to the doctors only. Thus, the registration process is not successfully
-                                    completed.
-                                </p>
-                                <h5 class="card-title text-sub-main mt-4">Dr. Yasser El-Gohary</h5>
-                                <h6 class="card-title text-secondary">CEO / Clinic</h6>
-                            </div>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" 
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-tag bg-main">New</span>
+                                    <span class="product-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" 
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-tag bg-pinky">Sale</span>
+                                    <span class="product-old-price">1500 LE</span>
+                                    <span class="product-new-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg" 
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-tag bg-pinky">Sale</span>
+                                    <span class="product-old-price">1500 LE</span>
+                                    <span class="product-new-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-tag bg-pinky">Sale</span>
+                                    <span class="product-old-price">1500 LE</span>
+                                    <span class="product-new-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-tag bg-main">New</span>
+                                    <span class="product-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-tag bg-pinky">Sale</span>
+                                    <span class="product-old-price">1500 LE</span>
+                                    <span class="product-new-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="col-lg-4 col-md-6 mb-4 text-center article-card">
+                                <div class="product-card position-relative mb-4">
+                                    <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
+                                        class="img-fluid" width="260" height="260" loading="lazy" />
+                                    <span class="product-tag bg-main">New</span>
+                                    <span class="product-price">1000 LE</span>
+                                    <span class="product-info">
+                                        <span class="mb-2 d-inline-block text-dark">Headphones</span>
+                                        <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
+                                    </span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
     </main>
+
     <!-- Footer -->
     <footer class="bg-dark text-white py-5">
         <div class="container">
@@ -551,7 +575,8 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-auto col-md-6 mb-3">
                     <a class="col-auto" href="./index.html">
-                        <img src="./assets/images/medclub-white-logo.svg" class="header-logo" loading="lazy" height="40" />
+                        <img src="./assets/images/medclub-white-logo.svg" class="header-logo" loading="lazy"
+                            height="40" />
                     </a>
                 </div>
                 <div class="col-lg-auto col-md-6 mb-3">
@@ -591,14 +616,13 @@
                 <div class="input-group search-input-group rounded-pill mb-3">
                     <input type="text" class="form-control rounded-pill bg-main-light text-white rounded-end-0"
                         placeholder="Enter your email address" aria-describedby="basic-addon2">
-                    <button class="input-group-text fw-bold rounded-pill rounded-start-0 bg-white text-main" 
-                        id="basic-addon2"
-                        type="button">Search</button>
+                    <button class="input-group-text fw-bold rounded-pill rounded-start-0 bg-white text-main"
+                        id="basic-addon2" type="button">Search</button>
                 </div>
             </form>
         </div>
-
     </div>
+
     <!-- Script Files -->
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
