@@ -625,6 +625,7 @@ footer .nav-link.active {
 .quantity-input {
     text-align: center;
     border: 1px solid #eaeaea;
+    padding-block: 1rem;
 }
 
 .quantity-action {
@@ -809,6 +810,17 @@ footer .nav-link.active {
 #shop-testimonial-carousel .owl-next.disabled {
     cursor: not-allowed;
     opacity: 0.5;
+}
+
+#cart-table th {
+    vertical-align: middle;
+    padding: 1.5rem 2.5rem;
+}
+
+#cart-table td,
+#cart-totals td {
+    vertical-align: middle;
+    padding: 1.5rem 2.5rem;
 }
 
 footer.home-footer {
