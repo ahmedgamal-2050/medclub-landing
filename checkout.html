@@ -157,333 +157,129 @@
                         <li class="breadcrumb-item">
                             <a href="./index.html">Home</a>
                         </li>
-                        <li class="breadcrumb-item">
-                            <a href="./product-list.html">Products List</a>
-                        </li>
                         <li class="breadcrumb-item active" aria-current="page">
-                            Product Details
+                            Checkout
                         </li>
                     </ol>
                 </nav>
             </div>
         </section>
 
-        <!-- Product Details -->
-        <section class="py-6">
+        <!-- Checkout Form -->
+        <section class="py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 mb-4">
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <div class="nav flex-column align-items-start nav-pills" id="product-images-tab" role="tablist" aria-orientation="vertical">
-                                    <button class="nav-link active mb-3" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1"
-                                        type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">
-                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-17-635x785.jpg" class="img-fluid"
-                                            width="405" height="405" loading="lazy" />
-                                    </button>
-                                    <button class="nav-link mb-3" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button"
-                                        role="tab" aria-controls="v-pills-2" aria-selected="false">
-                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/11/shop-product-4-635x785.jpg"
-                                            class="img-fluid" width="405" height="405" loading="lazy" />
-                                    </button>
-                                    <button class="nav-link mb-3" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button"
-                                        role="tab" aria-controls="v-pills-3" aria-selected="false">
-                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-7-635x785.jpg"
-                                            class="img-fluid" width="405" height="405" loading="lazy" />
-                                    </button>
-                                    <button class="nav-link mb-3" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button"
-                                        role="tab" aria-controls="v-pills-4" aria-selected="false">
-                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-11-635x785.jpg"
-                                            class="img-fluid" width="405" height="405" loading="lazy" />
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="col-lg-10">
-                                <div class="tab-content" id="v-pills-tabContent">
-                                    <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
-                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-17-635x785.jpg" class="img-fluid"
-                                            width="405" height="405" loading="lazy" />
-                                    </div>
-                                    <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
-                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/11/shop-product-4-635x785.jpg" class="img-fluid"
-                                            width="405" height="405" loading="lazy" />
-                                    </div>
-                                    <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
-                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-7-635x785.jpg" class="img-fluid"
-                                            width="405" height="405" loading="lazy" />
-                                    </div>
-                                    <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
-                                        <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-11-635x785.jpg" class="img-fluid"
-                                            width="405" height="405" loading="lazy" />
-                                    </div>
-                                </div>
-                            </div>
+                <div class="text-muted mb-3">
+                    <form class="row align-items-center">
+                        <div class="col-lg-6 mb-3">
+                            <label for="first_name" class="form-label">First Name <span class="text-danger">*</span></label>
+                            <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First Name">
                         </div>
-
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="row justify-content-between align-items-center mb-4">
-                            <h4 class="col-auto">
-                                Headphones
-                            </h4>
-                            <div class="col-auto">
-                                <button type="button" class="btn rouned-0 border text-muted small">
-                                    <i class="fas fa-share-alt"></i>
-                                    <span>Share</span>
-                                </button>
-                                <button type="button" class="btn rouned-0 border text-muted small">
-                                    <i class="far fa-heart"></i>
-                                    <span>Like</span>
-                                </button>
-                            </div>
+                        <div class="col-lg-6 mb-3">
+                            <label for="last_name" class="form-label">Last Name <span class="text-danger">*</span></label>
+                            <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last Name">
                         </div>
-                        <p class="text-main fw-bold">
-                            1000 LE
-                        </p>
-                        <p class="text-muted mb-0">
-                            Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aeneansollicitudin,
-                            lorem quis bibendum aucto nisi elit
-                            consequat ipsum nec sagittis sem nibh id elit.
-                        </p>
-                        <div class="d-flex border-bottom py-5">
-                            <div class="col-auto d-flex">
-                                <input type="text" id="quantity" data-step="1" data-min="1" data-max="" name="quantity" value="1"
-                                    class="quantity-input text-muted" size="4" pattern="[0-9]*" inputmode="numeric"
-                                    readonly>
-                                <div class="position-relative quantity-action">
-                                    <button type="button" class="position-absolute quantity-up text-muted"
-                                            onclick="increaseQuantity('quantity')">
-                                        <i class="fas fa-angle-up"></i>
-                                    </button>
-                                    <button type="button" class="position-absolute quantity-down text-muted"
-                                            onclick="decreaseQuantity('quantity')">
-                                        <i class="fas fa-angle-down"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <button class="btn py-3 px-4 btn-main rounded-pill mx-3">Add To Cart</button>
-                            </div>
+                        <div class="col-12 mb-3">
+                            <label for="company_name" class="form-label">Company Name <span class="text-muted">(optional)</span></label>
+                            <input type="text" name="company_name" class="form-control" id="company_name" placeholder="Company Name">
                         </div>
-                        <div class="py-4 border-bottom">
-                            <p>
-                                SKU: <span class="text-muted">001</span>
-                            </p>
-                            <p>
-                                Categories: <span class="text-muted">Gadgets, Shop</span>
-                            </p>
-                            <p>
-                                Tag: <span class="text-muted">Vintage</span>
-                            </p>
+                        <div class="col-12 mb-3">
+                            <label for="country" class="form-label">Country / Region <span class="text-danger">*</span></label>
+                            <input type="text" name="country" class="form-control" id="country" placeholder="Country / Region">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3 Tabs -->
-        <section class="py-5 border-bottom">
-            <div class="container">
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-1" type="button"
-                            role="tab" aria-controls="nav-1" aria-selected="true">
-                            Description
-                        </button>
-                        <button class="nav-link" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab"
-                            aria-controls="nav-2" aria-selected="false">
+                        <div class="col-12 mb-3">
+                            <label for="street_address" class="form-label">Street address <span class="text-danger">*</span></label>
+                            <input type="text" name="street_address" class="form-control" id="street_address" placeholder="House number and street name">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <input type="text" name="street_address" class="form-control" id="street_address" placeholder="Apartment, suite, unit, etc. (optional)">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="city" class="form-label">Town / City <span class="text-danger">*</span></label>
+                            <input type="text" name="city" class="form-control" id="city" placeholder="Town / City">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="zip" class="form-label">Postcode / ZIP <span class="text-danger">*</span></label>
+                            <input type="text" name="zip" class="form-control" id="zip" placeholder="Postcode / ZIP">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
+                            <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="create_account">
+                            <label class="form-check-label" for="create_account">Create an account?</label>
+                        </div>
+                        <h4 class="col-12 my-5 text-dark">
                             Additional information
-                        </button>
-                        <button class="nav-link" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-3" type="button" role="tab"
-                            aria-controls="nav-3" aria-selected="false">
-                            Reviews(0)
-                        </button>
-                    </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <!-- Description -->
-                    <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
-                        <div class="p-4"> 
-                            <h6 class="fw-bold mb-3">
-                                Description
-                            </h6>
-                            <p>
-                                Lorem ipsum proin gravida nibh vel velit auctor aliqunean sollicitudinlorem quis bibendum auci elit
-                                consequat ipsutis
-                                sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
-                                velit. Nam nec
-                                tellus a odio tincidunt auctor a ornare oed non mauris vitae erat consequat auctor eu in elit. Class aptent
-                                taciti
-                                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna
-                                eu felis
-                                dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
-                                nunc. Etiam
-                                pharetra, erat sed fermentum feugiat velit mauris egestas quam, ut aliquam massa nisl quis neque.
-                            </p>
+                        </h4>
+                        <div class="col-12 mb-3">
+                            <label for="note" class="form-label">Order notes <span class="text-muted">(optional)</span></label>
+                            <textarea class="form-control" name="note" id="note"></textarea>
                         </div>
-                    </div>
-                    <!-- Additional information -->
-                    <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
-                        <div class="p-4"> 
-                            <h6 class="fw-bold mb-3">
-                                Additional information
-                            </h6>
-                            <table class="border-0 additional-info-table">
+                        <h4 class="col-12 my-5 text-dark">
+                            Your order
+                        </h4>
+                        <table class="table table-bordered mb-3" id="cart-totals">
+                            <tbody>
                                 <tr>
-                                    <td>Weight</td>
-                                    <td class="text-muted">1 kg</td>
-                                </tr>
-                                <tr>
-                                    <td>Dimensions</td>
-                                    <td class="text-muted">10 × 10 × 15 cm</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <!-- Reviews -->
-                    <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
-                        <div class="p-4">
-                            <h6 class="fw-bold mb-3">
-                                Reviews
-                            </h6>
-                            <div class="text-muted mb-3">
-                                <p>
-                                    There are no reviews yet.
-                                </p>
-                                <p class="fw-500">
-                                    Be the first to review “Leather Headphones”
-                                </p>
-                                <p>
-                                    Your email address will not be published. Required fields are marked <span class="text-danger">*</span>
-                                </p>
-                            </div>
-                            <div class="text-muted mb-3">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Your rating <span class="text-danger">*</span></label>
-                                        <div>
-                                            <button type="button" class="rating-star px-md-0" id="star-1" onmouseout="hoverOutRate(1)" onmouseover="hoverRate(1)"
-                                                data-value="1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="26.693" height="25.387" viewBox="0 0 26.693 25.387">
-                                                    <path data-name="Icon metro-star-full"
-                                                        d="M29.264,12.38l-9.222-1.34L15.917,2.683,11.793,11.04,2.571,12.38l6.673,6.5L7.669,28.07l8.249-4.337,8.249,4.337-1.575-9.185,6.673-6.5Z"
-                                                        transform="translate(-2.571 -2.683)" fill="#d9d9d9" />
-                                                </svg>
-                                            </button>
-                                            <button type="button" class="rating-star px-md-0" id="star-2" onmouseout="hoverOutRate(2)" onmouseover="hoverRate(2)"
-                                                data-value="2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="26.693" height="25.387" viewBox="0 0 26.693 25.387">
-                                                    <path data-name="Icon metro-star-full"
-                                                        d="M29.264,12.38l-9.222-1.34L15.917,2.683,11.793,11.04,2.571,12.38l6.673,6.5L7.669,28.07l8.249-4.337,8.249,4.337-1.575-9.185,6.673-6.5Z"
-                                                        transform="translate(-2.571 -2.683)" fill="#d9d9d9" />
-                                                </svg>
-                                            </button>
-                                            <button type="button" class="rating-star px-md-0" id="star-3" onmouseout="hoverOutRate(3)" onmouseover="hoverRate(3)"
-                                                data-value="3">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="26.693" height="25.387" viewBox="0 0 26.693 25.387">
-                                                    <path data-name="Icon metro-star-full"
-                                                        d="M29.264,12.38l-9.222-1.34L15.917,2.683,11.793,11.04,2.571,12.38l6.673,6.5L7.669,28.07l8.249-4.337,8.249,4.337-1.575-9.185,6.673-6.5Z"
-                                                        transform="translate(-2.571 -2.683)" fill="#d9d9d9" />
-                                                </svg>
-                                            </button>
-                                            <button type="button" class="rating-star px-md-0" id="star-4" onmouseout="hoverOutRate(4)" onmouseover="hoverRate(4)"
-                                                data-value="4">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="26.693" height="25.387" viewBox="0 0 26.693 25.387">
-                                                    <path data-name="Icon metro-star-full"
-                                                        d="M29.264,12.38l-9.222-1.34L15.917,2.683,11.793,11.04,2.571,12.38l6.673,6.5L7.669,28.07l8.249-4.337,8.249,4.337-1.575-9.185,6.673-6.5Z"
-                                                        transform="translate(-2.571 -2.683)" fill="#d9d9d9" />
-                                                </svg>
-                                            </button>
-                                            <button type="button" class="rating-star px-md-0" id="star-5" onmouseout="hoverOutRate(5)" onmouseover="hoverRate(5)"
-                                                data-value="5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="26.693" height="25.387" viewBox="0 0 26.693 25.387">
-                                                    <path data-name="Icon metro-star-full"
-                                                        d="M29.264,12.38l-9.222-1.34L15.917,2.683,11.793,11.04,2.571,12.38l6.673,6.5L7.669,28.07l8.249-4.337,8.249,4.337-1.575-9.185,6.673-6.5Z"
-                                                        transform="translate(-2.571 -2.683)" fill="#d9d9d9" />
-                                                </svg>
-                                            </button>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                Product
+                                            </div>
+                                            <div>
+                                                Subtotal
+                                            </div>
                                         </div>
-                                        <input type="hidden" name="rating" id="rating">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Your review <span class="text-danger">*</span></label>
-                                        <textarea class="form-control" name="review"></textarea>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Name <span class="text-danger">*</span></label>
-                                        <input type="text" name="name" class="form-control" id="exampleInputPassword1">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Email <span class="text-danger">*</span></label>
-                                        <input type="email" name="email" class="form-control" id="exampleInputPassword1">
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Save my name, email, and website in this browser for the next time I comment.</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Post Comment</button>
-                                </form>
-                            </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between text-muted">
+                                            <div>
+                                                Headphone
+                                            </div>
+                                            <div>
+                                                99.00 LE
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                Subtotal
+                                            </div>
+                                            <div>
+                                                99.00 LE
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                Total
+                                            </div>
+                                            <div class="text-main fw-500">
+                                                99.00 LE
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-main rounded-pill px-4 py-3">Place Order</button>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Related Products -->
-        <section class="py-6">
-            <div class="container">
-                <h4 class="mb-4">Related Products</h4>
-                <div class="row justify-content-center align-items-center">
-                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-main">New</span>
-                            <span class="product-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-pinky">Sale</span>
-                            <span class="product-old-price">1500 LE</span>
-                            <span class="product-new-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./product-details.html" class="col-lg-3 col-md-6 mb-4 text-center article-card">
-                        <div class="product-card position-relative mb-4">
-                            <img src="https://connect.qodeinteractive.com/wp-content/uploads/2016/12/shop-product-12-635x635.jpg"
-                                class="img-fluid" width="260" height="260" loading="lazy" />
-                            <span class="product-tag bg-pinky">Sale</span>
-                            <span class="product-old-price">1500 LE</span>
-                            <span class="product-new-price">1000 LE</span>
-                            <span class="product-info">
-                                <span class="mb-2 d-inline-block text-dark">Headphones</span>
-                                <button type="button" class="d-inline-block text-main fw-bold">Add To Cart</button>
-                            </span>
-                        </div>
-                    </a>
+                        
+                    </form>
                 </div>
             </div>
         </section>
